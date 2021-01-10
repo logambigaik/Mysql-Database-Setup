@@ -13,6 +13,5 @@
 # Change password for root user
     ALTER USER 'root'@'localhost' IDENTIFIED BY 'Naresh#240';
 # Create user with in mysql database
-    create user 'naresh'@'%' IDENTIFIED BY 'Naresh#240';
-    GRANT ALL PRIVILEGES ON *.* TO 'naresh'@'%' WITH GRANT OPTION;
-    FLUSH PRIVILEGES;
+    create user 'naresh'@'localhost' IDENTIFIED BY 'Naresh#240';
+    GRANT ALL PRIVILEGES ON *.* TO 'naresh'@'localhost' WITH GRANT OPTION;
