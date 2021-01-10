@@ -15,3 +15,7 @@
 # Create user with in mysql database
     create user 'naresh'@'localhost' IDENTIFIED BY 'Naresh#240';
     GRANT ALL PRIVILEGES ON *.* TO 'naresh'@'localhost' WITH GRANT OPTION;
+
+#Checking list of users
+
+select host, user, password from mysql.user;
